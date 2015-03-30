@@ -11,7 +11,7 @@
 
 namespace datacentrix\sortable;
 use yii\web\AssetBundle;
-
+use yii;
 
 /**
  * Asset bundle for NestedSortable Widget
@@ -21,11 +21,14 @@ use yii\web\AssetBundle;
  */
 class NestedSortableAsset extends AssetBundle
 {
-    public $basePath = '@vendor/datacentrix/yii2-nested-sortable/assets';
+    public $sourcePath = '@vendor/datacentrix/yii2-nested-sortable/assets';
     public $js = [
         'nested-sortable.js'
     ];
+    public $css = [
+        'nested-sortable.css'
+    ];
     public $depends = [
-        'frontend\assets\AppAsset',
+        'yii\web\YiiAsset',
     ];
 }

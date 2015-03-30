@@ -23,11 +23,28 @@ class NestedSortable extends \yii\base\Widget
 {
     public function init()
     {
-        Yii::$app->getAssetManager()->publish('datacentrix\sortable\NestedSortableAsset');
+        $view = $this->getView();
+        NestedSortableAsset::register($view);
+        $view->registerJs("\$('#" . $this->getId() . "').nestedSortable({
+            handle: 'div',
+            items: 'li',
+            toleranceElement: '> div'
+        });");
     }
 
     public function run()
     {
-        return "Hello!";
+        return '<ol class="sortable" id="'.$this->getId().'">
+    <li><div>Some content</div></li>
+    <li>
+        <div>Some content</div>
+        <ol>
+            <li><div>Some sub-item content</div></li>
+            <li><div>Some sub-item content</div></li>
+        </ol>
+    </li>
+    <li><div>Some content</div></li>
+</ol>';
     }
+
 }
