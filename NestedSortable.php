@@ -26,9 +26,26 @@ class NestedSortable extends \yii\base\Widget
         $view = $this->getView();
         NestedSortableAsset::register($view);
         $view->registerJs("\$('#" . $this->getId() . "').nestedSortable({
+<<<<<<< Updated upstream
             handle: 'div',
             items: 'li',
             toleranceElement: '> div'
+=======
+            forcePlaceholderSize: true,
+handle: 'div',
+helper:	'clone',
+items: 'li',
+opacity: .6,
+placeholder: 'placeholder',
+revert: 250,
+tabSize: 25,
+tolerance: 'pointer',
+toleranceElement: '> div',
+maxLevels: 3,
+isTree: true,
+expandOnHover: 700,
+startCollapsed: false,
+>>>>>>> Stashed changes
         });");
     }
 
@@ -39,7 +56,11 @@ class NestedSortable extends \yii\base\Widget
     <li>
         <div>Some content</div>
         <ol>
+<<<<<<< Updated upstream
             <li><div>Some sub-item content</div></li>
+=======
+            <li><div>Some sub-item content<br /><input type="text" /><input type="button" /></div></li>
+>>>>>>> Stashed changes
             <li><div>Some sub-item content</div></li>
         </ol>
     </li>
