@@ -29,6 +29,6 @@ class NestedSortableAsset extends AssetBundle
         'nested-sortable.css'
     ];
     public $depends = [
-        'yii\web\YiiAsset',
+        'yii\jui\JuiAsset',
     ];
 }
