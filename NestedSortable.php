@@ -28,10 +28,7 @@ class NestedSortable extends \yii\base\Widget
         NestedSortableAsset::register($view);
         $view->registerJs("\$('#" . $this->getId() . "').nestedSortable({
             handle: 'div',
-            items: 'li',
-            toleranceElement: '> div'
             forcePlaceholderSize: true,
-            handle: 'div',
             helper:	'clone',
             items: 'li',
             opacity: .6,
