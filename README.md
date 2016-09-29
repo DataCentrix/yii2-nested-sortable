@@ -11,13 +11,13 @@ The preferred way to install this extension is through [composer](http://getcomp
 Either run
 
 ```
-php composer.phar require --prefer-dist datacentrix/yii2-nested-sortable "*"
+php composer.phar require --prefer-dist stansoftbg/yii2-nested-sortable "*"
 ```
 
 or add
 
 ```
-"datacentrix/yii2-nested-sortable": "*"
+"stansoftbg/yii2-nested-sortable": "*"
 ```
 
 to the require section of your `composer.json` file.
@@ -39,4 +39,4 @@ Usage
 Once the extension is installed, simply use it in your code by  :
 
 ```php
-<?= \datacentrix\sortable\AutoloadExample::widget(); ?>```
+<?= \stansoft\sortable\AutoloadExample::widget(); ?>```

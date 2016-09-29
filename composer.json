@@ -1,5 +1,5 @@
 {
-    "name": "datacentrix/yii2-nested-sortable",
+    "name": "stansoftbg/yii2-nested-sortable",
     "description": "**nestedSortable** is a jQuery plugin that extends jQuery Sortable UI functionalities to nested lists.  ",
     "type": "yii2-extension",
     "keywords": ["yii2","extension","sortable","nested","jquery","menu"],
@@ -7,7 +7,7 @@
     "authors": [
         {
             "name": "Stanimir Stoyanov",
-            "email": "stanimir@datacentrix.org"
+            "email": "stan@linux.com"
         }
     ],
     "require": {
@@ -16,7 +16,7 @@
     },
     "autoload": {
         "psr-4": {
-            "datacentrix\\sortable\\": ""
+            "stansoft\\sortable\\": ""
         }
     }
 }
